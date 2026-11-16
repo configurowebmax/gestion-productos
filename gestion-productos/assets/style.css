@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    background-image: linear-gradient(120deg, #ee1c1c 25%, #087aaf 100%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Ajustado para ocupar toda la altura de la ventana */
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 91.8vh;
+}
+
+.cards {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 300px;
+}
+
+.card>p {
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.graph-container {
+    width: 49%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.product-container {
+    width: 90%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+
+.action-button>button {
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo ajustado */
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.login-container .form-control {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+}
+
+.login-container .btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container .btn:hover {
+    background-color: #555555;
+}
+
+.alert {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-home {
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .card>p {
+        font-size: 18px;
+    }
+
+    .graphs {
+        width: 100%;
+    }
+
+    .graph-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card>p {
+        font-size: 16px;
+    }
+
+    .graph-container {
+        padding: 10px;
+    }
+
+    .graphs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
